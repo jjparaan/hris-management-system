@@ -37,3 +37,4 @@ C:\Users\Jhuan Julio Paraan\Desktop\Dev\Repository\hris-management-system\applic
 C:\Users\Jhuan Julio Paraan\Desktop\Dev\Repository\hris-management-system\application.Server\obj\Debug\net8.0\application.Server.pdb
 C:\Users\Jhuan Julio Paraan\Desktop\Dev\Repository\hris-management-system\application.Server\obj\Debug\net8.0\application.Server.genruntimeconfig.cache
 C:\Users\Jhuan Julio Paraan\Desktop\Dev\Repository\hris-management-system\application.Server\obj\Debug\net8.0\ref\application.Server.dll
+C:\Users\Jhuan Julio Paraan\Desktop\Dev\Repository\hris-management-system\application.Server\obj\Debug\net8.0\application.Server.sourcelink.json
