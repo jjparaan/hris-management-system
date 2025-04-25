@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:51204",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Users\\Jhuan Julio Paraan\\Desktop\\Dev\\Repository\\hris-management-system\\application.Server\\..\\application.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

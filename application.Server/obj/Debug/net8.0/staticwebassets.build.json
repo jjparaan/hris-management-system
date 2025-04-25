@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "gGP5Xn4KTcZZ0cFqrEUb4+25OfF6UJIhI+xG7UA+P/w=",
+  "Source": "application.Server",
+  "BasePath": "_content/application.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Jhuan Julio Paraan\\Desktop\\Dev\\Repository\\hris-management-system\\application.client\\application.client.esproj",
+      "Version": 2,
+      "Source": "application.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
