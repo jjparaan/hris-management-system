@@ -10,6 +10,6 @@ namespace application.Server.Entities
         public string Username { get; set; }
         public string PasswordHash { get; set; }
         public UserRole Role { get; set; } 
-        public virtual ICollection<Log> Logs { get; set; } = [];
+        public virtual ICollection<ApplicationLog> ApplicationLogs { get; set; } = [];
     }
 }

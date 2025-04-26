@@ -20,7 +20,7 @@ namespace application.Server.Contexts
             ConfigurePayroll();
             ConfigureUserAccount();
             ConfigureJobTitle();
-            ConfigureLog();
+            ConfigureApplicationLog();
         }
         private void ConfigureEmployee()
         {
@@ -194,9 +194,9 @@ namespace application.Server.Contexts
             });
         }
 
-        private void ConfigureLog()
+        private void ConfigureApplicationLog()
         {
-            _modelBuilder.Entity<Log>(entity =>
+            _modelBuilder.Entity<ApplicationLog>(entity =>
             {
                 entity.HasKey(l => l.Id);
                 entity.Property(l => l.CreatedOn).IsRequired();
@@ -205,7 +205,7 @@ namespace application.Server.Contexts
                 entity.Property(l => l.Exception).HasMaxLength(2000);
                 entity.Property(l => l.Logger).HasMaxLength(255);
                 entity.HasOne(p => p.UserAccount)
-                    .WithMany(e => e.Logs)
+                    .WithMany(e => e.ApplicationLogs)
                     .HasForeignKey(p => p.UserAccountId)
                     .OnDelete(DeleteBehavior.Restrict);
             });

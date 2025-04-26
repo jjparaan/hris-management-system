@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using application.Server.Contexts;
 
@@ -11,9 +12,11 @@ using application.Server.Contexts;
 namespace application.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250426121245_RenameLogToApplicationLog")]
+    partial class RenameLogToApplicationLog
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -56,7 +59,7 @@ namespace application.Server.Migrations
 
                     b.HasIndex("UserAccountId");
 
-                    b.ToTable("ApplicationLogs");
+                    b.ToTable("Logs");
                 });
 
             modelBuilder.Entity("application.Server.Entities.AttendanceRecord", b =>

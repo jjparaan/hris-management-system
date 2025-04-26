@@ -1,6 +1,6 @@
 ﻿namespace application.Server.Entities.Enums.Log
 {
-    public enum LogLevel
+    public enum ApplicationLogLevel
     {
         Trace,
         Debug ,

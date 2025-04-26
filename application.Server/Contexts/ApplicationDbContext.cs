@@ -14,7 +14,7 @@ namespace application.Server.Contexts
         public DbSet<LeaveRequest> LeaveRequests { get; set; }
         public DbSet<Payroll> Payrolls { get; set; }
         public DbSet<UserAccount> UserAccounts { get; set; }
-        public DbSet<Log> Logs { get; set; }
+        public DbSet<ApplicationLog> ApplicationLogs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
