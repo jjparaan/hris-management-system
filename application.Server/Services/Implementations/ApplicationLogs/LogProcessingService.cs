@@ -33,7 +33,7 @@ namespace application.Server.Services.Implementations.ApplicationLogs
                     using (var scope = _serviceProvider.CreateScope())
                     {
                         var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-                        context.ApplicationLogs.Add(log);
+                        //context.ApplicationLogs.Add(log);
                         await context.SaveChangesAsync(stoppingToken);
                     }
                 }
