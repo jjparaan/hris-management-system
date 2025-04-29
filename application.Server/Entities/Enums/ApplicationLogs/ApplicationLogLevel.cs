@@ -1,4 +1,4 @@
-﻿namespace application.Server.Entities.Enums.Log
+﻿namespace application.Server.Entities.Enums.ApplicationLogs
 {
     public enum ApplicationLogLevel
     {

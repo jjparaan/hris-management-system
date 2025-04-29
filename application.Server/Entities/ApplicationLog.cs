@@ -1,5 +1,5 @@
 ﻿using application.Server.Entities.Common;
-using application.Server.Entities.Enums.Log;
+using application.Server.Entities.Enums.ApplicationLogs;
 
 namespace application.Server.Entities
 {

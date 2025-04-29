@@ -1,3 +1,4 @@
+using application.Server.Services.Interfaces.ApplicationLogs;
 using Microsoft.AspNetCore.Mvc;
 
 namespace application.Server.Controllers
@@ -11,9 +12,9 @@ namespace application.Server.Controllers
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogService _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogService logger)
         {
             _logger = logger;
         }

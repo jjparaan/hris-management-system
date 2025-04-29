@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jhuan Julio Paraan\\Desktop\\Dev\\Repository\\hris-management-system\\application.Server\\application.Server.csproj": {}
+    "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\application.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jhuan Julio Paraan\\Desktop\\Dev\\Repository\\hris-management-system\\application.Server\\application.Server.csproj": {
+    "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\application.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jhuan Julio Paraan\\Desktop\\Dev\\Repository\\hris-management-system\\application.Server\\application.Server.csproj",
+        "projectUniqueName": "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\application.Server.csproj",
         "projectName": "application.Server",
-        "projectPath": "C:\\Users\\Jhuan Julio Paraan\\Desktop\\Dev\\Repository\\hris-management-system\\application.Server\\application.Server.csproj",
-        "packagesPath": "C:\\Users\\Jhuan Julio Paraan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jhuan Julio Paraan\\Desktop\\Dev\\Repository\\hris-management-system\\application.Server\\obj\\",
+        "projectPath": "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\application.Server.csproj",
+        "packagesPath": "C:\\Users\\01PH1714.Jhuan.P\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jhuan Julio Paraan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\01PH1714.Jhuan.P\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -43,8 +44,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.200"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -78,6 +78,14 @@
               "target": "Package",
               "version": "[8.0.4, )"
             },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -102,7 +110,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.308/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
