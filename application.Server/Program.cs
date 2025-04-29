@@ -1,4 +1,6 @@
 using application.Server.Contexts;
+using application.Server.Repositories.Implementations;
+using application.Server.Repositories.Interfaces;
 using application.Server.Services.Implementations.ApplicationLogs;
 using application.Server.Services.Interfaces.ApplicationLogs;
 using application.Server.Services.Models;
@@ -31,16 +33,27 @@ Log.Logger = new LoggerConfiguration()
     )
     .CreateLogger();
 
+var AllowedSpecificOrigins = "_allowedSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Host.UseSerilog();
 builder.Services.AddControllers();
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
+builder.Services.AddCors(options => 
+    options.AddPolicy(name: "AllowedSpecificOrigins", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    })
+);
 
 // Register dependency
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSingleton<LogQueue>();
 builder.Services.AddScoped<ILogService, LogService>();
+builder.Services.AddScoped<IJobTitleRepository, JobTitleRepository>();
 builder.Services.AddHostedService<LogProcessingService>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));  
@@ -53,6 +66,7 @@ var app = builder.Build();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
+app.UseCors(AllowedSpecificOrigins);
 
 // Middleware to catch unhandled exception
 app.Use(async (context, next) =>
