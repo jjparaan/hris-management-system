@@ -59,3 +59,44 @@ ORDER BY [t].[Id]
 2025-04-30 15:44:29.042 +08:00 [INF] Executed action application.API.Controllers.JobTitleController.GetJobTitle (application.API) in 318.2424ms
 2025-04-30 15:44:29.044 +08:00 [INF] Executed endpoint 'application.API.Controllers.JobTitleController.GetJobTitle (application.API)'
 2025-04-30 15:44:29.047 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/getjobtitle/1 - 200 null application/json; charset=utf-8 349.64ms
+2025-04-30 17:54:55.415 +08:00 [INF] Now listening on: https://localhost:7258
+2025-04-30 17:54:55.427 +08:00 [INF] Now listening on: http://localhost:5039
+2025-04-30 17:54:55.435 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-30 17:54:55.437 +08:00 [INF] Hosting environment: Development
+2025-04-30 17:54:55.438 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API
+2025-04-30 17:54:59.866 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
+2025-04-30 17:55:50.401 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-04-30 17:55:50.628 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 200 null text/html;charset=utf-8 230.1142ms
+2025-04-30 17:55:50.628 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-30 17:55:50.628 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_vs/browserLink - null null
+2025-04-30 17:55:50.643 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 14.8914ms
+2025-04-30 17:55:50.711 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.7716ms
+2025-04-30 17:55:50.862 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - null null
+2025-04-30 17:55:51.117 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 255.3275ms
+2025-04-30 17:55:56.035 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/getjobtitles - null null
+2025-04-30 17:55:56.052 +08:00 [INF] Executing endpoint 'application.API.Controllers.JobTitleController.GetJobTitles (application.API)'
+2025-04-30 17:55:56.068 +08:00 [INF] Route matched with {action = "GetJobTitles", controller = "JobTitle"}. Executing controller action with signature System.Threading.Tasks.Task`1[application.API.Services.Models.ApplicationHttpResponse`1[System.Collections.Generic.List`1[application.API.Entities.JobTitle]]] GetJobTitles() on controller application.API.Controllers.JobTitleController (application.API).
+2025-04-30 17:55:56.302 +08:00 [INF] Fetching all Job titles
+2025-04-30 17:55:57.392 +08:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CreatedBy], [j].[CreatedOn], [j].[Description], [j].[LastModifiedBy], [j].[LastModifiedOn], [j].[Name]
+FROM [JobTitles] AS [j]
+2025-04-30 17:55:57.514 +08:00 [INF] Executing ObjectResult, writing value of type 'application.API.Services.Models.ApplicationHttpResponse`1[[System.Collections.Generic.List`1[[application.API.Entities.JobTitle, application.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-30 17:55:57.571 +08:00 [INF] Executed action application.API.Controllers.JobTitleController.GetJobTitles (application.API) in 1484.3239ms
+2025-04-30 17:55:57.573 +08:00 [INF] Executed endpoint 'application.API.Controllers.JobTitleController.GetJobTitles (application.API)'
+2025-04-30 17:55:57.585 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/getjobtitles - 200 null application/json; charset=utf-8 1550.3343ms
+2025-04-30 17:56:04.093 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/getjobtitle/1 - null null
+2025-04-30 17:56:04.106 +08:00 [INF] Executing endpoint 'application.API.Controllers.JobTitleController.GetJobTitle (application.API)'
+2025-04-30 17:56:04.116 +08:00 [INF] Route matched with {action = "GetJobTitle", controller = "JobTitle"}. Executing controller action with signature System.Threading.Tasks.Task`1[application.API.Services.Models.ApplicationHttpResponse`1[application.API.Entities.JobTitle]] GetJobTitle(Int32) on controller application.API.Controllers.JobTitleController (application.API).
+2025-04-30 17:56:04.371 +08:00 [INF] Executed DbCommand (29ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[Description], [t].[LastModifiedBy], [t].[LastModifiedOn], [t].[Name], [e].[Id], [e].[Address], [e].[CreatedBy], [e].[CreatedOn], [e].[DateOfBirth], [e].[DepartmentId], [e].[Email], [e].[EmployeeCode], [e].[EmploymentStatus], [e].[FirstName], [e].[Gender], [e].[HireDate], [e].[JobTitleId], [e].[LastModifiedBy], [e].[LastModifiedOn], [e].[LastName], [e].[MiddleName], [e].[PhoneNumber], [e].[ProfilePictureUrl], [e].[Salary], [e].[ShortCode]
+FROM (
+    SELECT TOP(1) [j].[Id], [j].[CreatedBy], [j].[CreatedOn], [j].[Description], [j].[LastModifiedBy], [j].[LastModifiedOn], [j].[Name]
+    FROM [JobTitles] AS [j]
+    WHERE [j].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Employees] AS [e] ON [t].[Id] = [e].[JobTitleId]
+ORDER BY [t].[Id]
+2025-04-30 17:56:04.390 +08:00 [INF] Executing ObjectResult, writing value of type 'application.API.Services.Models.ApplicationHttpResponse`1[[application.API.Entities.JobTitle, application.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-30 17:56:04.393 +08:00 [INF] Executed action application.API.Controllers.JobTitleController.GetJobTitle (application.API) in 268.4707ms
+2025-04-30 17:56:04.394 +08:00 [INF] Executed endpoint 'application.API.Controllers.JobTitleController.GetJobTitle (application.API)'
+2025-04-30 17:56:04.398 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/getjobtitle/1 - 200 null application/json; charset=utf-8 305.002ms
