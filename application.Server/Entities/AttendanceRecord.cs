@@ -1,7 +1,7 @@
-﻿using application.Server.Entities.Common;
-using application.Server.Entities.Enums.Employee;
+﻿using application.API.Entities.Common;
+using application.API.Entities.Enums.Employee;
 
-namespace application.Server.Entities
+namespace application.API.Entities
 {
     public class AttendanceRecord : AuditableBaseEntity
     {

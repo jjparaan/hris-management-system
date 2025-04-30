@@ -1,9 +1,9 @@
-using application.Server.Contexts;
-using application.Server.Repositories.Implementations;
-using application.Server.Repositories.Interfaces;
-using application.Server.Services.Implementations.ApplicationLogs;
-using application.Server.Services.Interfaces.ApplicationLogs;
-using application.Server.Services.Models;
+using application.API.Contexts;
+using application.API.Repositories.Implementations;
+using application.API.Repositories.Interfaces;
+using application.API.Services.Implementations.ApplicationLogs;
+using application.API.Services.Interfaces.ApplicationLogs;
+using application.API.Services.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;

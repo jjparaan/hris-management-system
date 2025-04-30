@@ -1,10 +1,10 @@
-﻿using application.Server.Contexts;
-using application.Server.Entities;
-using application.Server.Repositories.Interfaces;
-using application.Server.Services.Interfaces.ApplicationLogs;
+﻿using application.API.Contexts;
+using application.API.Entities;
+using application.API.Repositories.Interfaces;
+using application.API.Services.Interfaces.ApplicationLogs;
 using Microsoft.EntityFrameworkCore;
 
-namespace application.Server.Repositories.Implementations
+namespace application.API.Repositories.Implementations
 {
     public class JobTitleRepository : IJobTitleRepository
     {

@@ -1,8 +1,8 @@
-﻿using application.Server.Entities;
+﻿using application.API.Entities;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace application.Server.Services.Models
+namespace application.API.Services.Models
 {
     public class LogQueue
     {

@@ -7015,9 +7015,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\application.Server.csproj",
-      "projectName": "application.Server",
-      "projectPath": "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\application.Server.csproj",
+      "projectUniqueName": "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\application.API.csproj",
+      "projectName": "application.API",
+      "projectPath": "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\application.API.csproj",
       "packagesPath": "C:\\Users\\01PH1714.Jhuan.P\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\obj\\",
       "projectStyle": "PackageReference",

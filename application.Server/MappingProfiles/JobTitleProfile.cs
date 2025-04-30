@@ -1,8 +1,8 @@
-﻿using application.Server.Entities;
-using application.Server.Entities.DTOs;
+﻿using application.API.Entities;
+using application.API.Entities.DTOs;
 using AutoMapper;
 
-namespace application.Server.Profiles
+namespace application.API.MappingProfiles
 {
     public class JobTitleProfile : Profile
     {

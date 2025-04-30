@@ -1,6 +1,6 @@
-﻿using application.Server.Entities.Common;
+﻿using application.API.Entities.Common;
 
-namespace application.Server.Entities
+namespace application.API.Entities
 {
     public class Payroll : AuditableBaseEntity
     {

@@ -1,4 +1,4 @@
-﻿namespace application.Server.Entities.Enums.Employee
+﻿namespace application.API.Entities.Enums.Employee
 {
     public enum AttendanceStatus
     {

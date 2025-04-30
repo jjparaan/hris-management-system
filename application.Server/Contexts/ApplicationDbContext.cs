@@ -1,7 +1,7 @@
-﻿using application.Server.Entities;
+﻿using application.API.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace application.Server.Contexts
+namespace application.API.Contexts
 {
     public class ApplicationDbContext : DbContext 
     {

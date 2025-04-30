@@ -1,4 +1,4 @@
-﻿namespace application.Server.Entities.Common
+﻿namespace application.API.Entities.Common
 {
     public class AuditableBaseEntity : BaseEntity
     {

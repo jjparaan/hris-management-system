@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "application.client", "application.client\application.client.esproj", "{9BA13027-EBB5-554F-8AB7-52D741F46F4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "application.Server", "application.Server\application.Server.csproj", "{AFA28E5F-0A61-4E1D-82F7-126624F4722C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "application.API", "application.Server\application.API.csproj", "{AFA28E5F-0A61-4E1D-82F7-126624F4722C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

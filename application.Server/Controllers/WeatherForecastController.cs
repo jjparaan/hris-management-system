@@ -1,7 +1,7 @@
-using application.Server.Services.Interfaces.ApplicationLogs;
+using application.API.Services.Interfaces.ApplicationLogs;
 using Microsoft.AspNetCore.Mvc;
 
-namespace application.Server.Controllers
+namespace application.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -1,13 +1,13 @@
-﻿using application.Server.Entities;
-using application.Server.Entities.DTOs;
-using application.Server.Repositories.Interfaces;
-using application.Server.Services.Interfaces.ApplicationLogs;
-using application.Server.Services.Models;
+﻿using application.API.Entities;
+using application.API.Entities.DTOs;
+using application.API.Repositories.Interfaces;
+using application.API.Services.Interfaces.ApplicationLogs;
+using application.API.Services.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace application.Server.Controllers
+namespace application.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]

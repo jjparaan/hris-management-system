@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace application.Server.Services.Interfaces.ApplicationLogs
+namespace application.API.Services.Interfaces.ApplicationLogs
 {
     public interface ILogService
     {

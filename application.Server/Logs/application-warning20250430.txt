@@ -1,0 +1,2 @@
+2025-04-30 15:42:56.016 +08:00 [WRN] The WebRootPath was not found: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.Server\wwwroot. Static files may be unavailable.
+2025-04-30 15:42:56.382 +08:00 [WRN] The WebRootPath was not found: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.Server\wwwroot. Static files may be unavailable.

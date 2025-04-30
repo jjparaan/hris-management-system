@@ -1,6 +1,6 @@
-﻿using application.Server.Entities;
+﻿using application.API.Entities;
 
-namespace application.Server.Repositories.Interfaces
+namespace application.API.Repositories.Interfaces
 {
     public interface IJobTitleRepository
     {

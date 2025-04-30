@@ -1,5 +1,5 @@
 2025-04-29 18:42:48.269 +08:00 [ERR] Unhandled exception occurred
-System.InvalidOperationException: Unable to resolve service for type 'application.Server.Repositories.Implementations.JobTitleRepository' while attempting to activate 'application.Server.Controllers.JobTitleController'.
+System.InvalidOperationException: Unable to resolve service for type 'application.API.Repositories.Implementations.JobTitleRepository' while attempting to activate 'application.API.Controllers.JobTitleController'.
    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
    at lambda_method10(Closure, IServiceProvider, Object[])
    at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
@@ -13,5 +13,5 @@ System.InvalidOperationException: Unable to resolve service for type 'applicatio
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.Server\Program.cs:line 76
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API\Program.cs:line 76
 --

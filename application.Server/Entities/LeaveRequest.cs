@@ -1,7 +1,7 @@
-﻿using application.Server.Entities.Common;
-using application.Server.Entities.Enums.Leave;
+﻿using application.API.Entities.Common;
+using application.API.Entities.Enums.Leave;
 
-namespace application.Server.Entities
+namespace application.API.Entities
 {
     public class LeaveRequest : AuditableBaseEntity
     {

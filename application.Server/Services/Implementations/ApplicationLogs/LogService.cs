@@ -1,15 +1,15 @@
-﻿using application.Server.Contexts;
-using application.Server.Entities.Enums.ApplicationLogs;
-using application.Server.Entities;
+﻿using application.API.Contexts;
+using application.API.Entities.Enums.ApplicationLogs;
+using application.API.Entities;
 using Serilog;
 using System.Security.Claims;
-using application.Server.Services.Interfaces.ApplicationLogs;
-using application.Server.Services.Models;
+using application.API.Services.Interfaces.ApplicationLogs;
+using application.API.Services.Models;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 using System;
 
-namespace application.Server.Services.Implementations.ApplicationLogs
+namespace application.API.Services.Implementations.ApplicationLogs
 {
     public class LogService : ILogService
     {

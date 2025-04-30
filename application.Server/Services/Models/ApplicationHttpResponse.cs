@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace application.Server.Services.Models
+namespace application.API.Services.Models
 {
     public class ApplicationHttpResponse<T>
     {

@@ -1,7 +1,7 @@
-﻿using application.Server.Entities.Common;
-using application.Server.Entities.Enums.ApplicationLogs;
+﻿using application.API.Entities.Common;
+using application.API.Entities.Enums.ApplicationLogs;
 
-namespace application.Server.Entities
+namespace application.API.Entities
 {
     public class ApplicationLog : BaseEntity
     {

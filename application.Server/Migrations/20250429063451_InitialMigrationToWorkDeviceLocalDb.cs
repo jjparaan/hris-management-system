@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace application.Server.Migrations
+namespace application.API.Migrations
 {
     /// <inheritdoc />
     public partial class InitialMigrationToWorkDeviceLocalDb : Migration

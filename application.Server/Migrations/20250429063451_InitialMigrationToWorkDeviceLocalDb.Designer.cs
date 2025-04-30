@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using application.Server.Contexts;
+using application.API.Contexts;
 
 #nullable disable
 
-namespace application.Server.Migrations
+namespace application.API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     [Migration("20250429063451_InitialMigrationToWorkDeviceLocalDb")]
@@ -25,7 +25,7 @@ namespace application.Server.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("application.Server.Entities.ApplicationLog", b =>
+            modelBuilder.Entity("application.API.Entities.ApplicationLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -62,7 +62,7 @@ namespace application.Server.Migrations
                     b.ToTable("ApplicationLogs");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.AttendanceRecord", b =>
+            modelBuilder.Entity("application.API.Entities.AttendanceRecord", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -104,7 +104,7 @@ namespace application.Server.Migrations
                     b.ToTable("AttendanceRecords");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.Department", b =>
+            modelBuilder.Entity("application.API.Entities.Department", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -142,7 +142,7 @@ namespace application.Server.Migrations
                     b.ToTable("Departments");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.Employee", b =>
+            modelBuilder.Entity("application.API.Entities.Employee", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -235,7 +235,7 @@ namespace application.Server.Migrations
                     b.ToTable("Employees");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.JobTitle", b =>
+            modelBuilder.Entity("application.API.Entities.JobTitle", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -273,7 +273,7 @@ namespace application.Server.Migrations
                     b.ToTable("JobTitles");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.LeaveRequest", b =>
+            modelBuilder.Entity("application.API.Entities.LeaveRequest", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -326,7 +326,7 @@ namespace application.Server.Migrations
                     b.ToTable("LeaveRequests");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.Payroll", b =>
+            modelBuilder.Entity("application.API.Entities.Payroll", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -371,7 +371,7 @@ namespace application.Server.Migrations
                     b.ToTable("Payrolls");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.UserAccount", b =>
+            modelBuilder.Entity("application.API.Entities.UserAccount", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -416,9 +416,9 @@ namespace application.Server.Migrations
                     b.ToTable("UserAccounts");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.ApplicationLog", b =>
+            modelBuilder.Entity("application.API.Entities.ApplicationLog", b =>
                 {
-                    b.HasOne("application.Server.Entities.UserAccount", "UserAccount")
+                    b.HasOne("application.API.Entities.UserAccount", "UserAccount")
                         .WithMany("ApplicationLogs")
                         .HasForeignKey("UserAccountId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -427,9 +427,9 @@ namespace application.Server.Migrations
                     b.Navigation("UserAccount");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.AttendanceRecord", b =>
+            modelBuilder.Entity("application.API.Entities.AttendanceRecord", b =>
                 {
-                    b.HasOne("application.Server.Entities.Employee", "Employee")
+                    b.HasOne("application.API.Entities.Employee", "Employee")
                         .WithMany("AttendanceRecords")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -438,15 +438,15 @@ namespace application.Server.Migrations
                     b.Navigation("Employee");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.Employee", b =>
+            modelBuilder.Entity("application.API.Entities.Employee", b =>
                 {
-                    b.HasOne("application.Server.Entities.Department", "Department")
+                    b.HasOne("application.API.Entities.Department", "Department")
                         .WithMany("Employees")
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("application.Server.Entities.JobTitle", "JobTitle")
+                    b.HasOne("application.API.Entities.JobTitle", "JobTitle")
                         .WithMany("Employees")
                         .HasForeignKey("JobTitleId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -457,9 +457,9 @@ namespace application.Server.Migrations
                     b.Navigation("JobTitle");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.LeaveRequest", b =>
+            modelBuilder.Entity("application.API.Entities.LeaveRequest", b =>
                 {
-                    b.HasOne("application.Server.Entities.Employee", "Employee")
+                    b.HasOne("application.API.Entities.Employee", "Employee")
                         .WithMany("LeaveRequests")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -468,9 +468,9 @@ namespace application.Server.Migrations
                     b.Navigation("Employee");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.Payroll", b =>
+            modelBuilder.Entity("application.API.Entities.Payroll", b =>
                 {
-                    b.HasOne("application.Server.Entities.Employee", "Employee")
+                    b.HasOne("application.API.Entities.Employee", "Employee")
                         .WithMany("Payrolls")
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -479,9 +479,9 @@ namespace application.Server.Migrations
                     b.Navigation("Employee");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.UserAccount", b =>
+            modelBuilder.Entity("application.API.Entities.UserAccount", b =>
                 {
-                    b.HasOne("application.Server.Entities.Employee", "Employee")
+                    b.HasOne("application.API.Entities.Employee", "Employee")
                         .WithMany()
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -490,12 +490,12 @@ namespace application.Server.Migrations
                     b.Navigation("Employee");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.Department", b =>
+            modelBuilder.Entity("application.API.Entities.Department", b =>
                 {
                     b.Navigation("Employees");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.Employee", b =>
+            modelBuilder.Entity("application.API.Entities.Employee", b =>
                 {
                     b.Navigation("AttendanceRecords");
 
@@ -504,12 +504,12 @@ namespace application.Server.Migrations
                     b.Navigation("Payrolls");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.JobTitle", b =>
+            modelBuilder.Entity("application.API.Entities.JobTitle", b =>
                 {
                     b.Navigation("Employees");
                 });
 
-            modelBuilder.Entity("application.Server.Entities.UserAccount", b =>
+            modelBuilder.Entity("application.API.Entities.UserAccount", b =>
                 {
                     b.Navigation("ApplicationLogs");
                 });

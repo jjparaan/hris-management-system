@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jEdFdy/HKr0=",
+  "dgSpecHash": "Vw2y8r0qZSU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\application.Server.csproj",
+  "projectFilePath": "C:\\Users\\01PH1714.Jhuan.P\\Desktop\\Dev\\hris-management-system\\application.Server\\application.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\01PH1714.Jhuan.P\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\01PH1714.Jhuan.P\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

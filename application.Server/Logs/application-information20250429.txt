@@ -2,7 +2,7 @@
 2025-04-29 16:20:54.994 +08:00 [INF] Now listening on: http://localhost:5039
 2025-04-29 16:20:55.000 +08:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-04-29 16:20:55.002 +08:00 [INF] Hosting environment: Development
-2025-04-29 16:20:55.003 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.Server
+2025-04-29 16:20:55.003 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API
 2025-04-29 16:20:59.129 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
 2025-04-29 16:21:05.324 +08:00 [INF] SPA development server running at 'https://localhost:51204'
 2025-04-29 16:21:10.665 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.html - null null
@@ -29,7 +29,7 @@
 2025-04-29 18:38:27.869 +08:00 [INF] Now listening on: http://localhost:5039
 2025-04-29 18:38:27.874 +08:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-04-29 18:38:27.874 +08:00 [INF] Hosting environment: Development
-2025-04-29 18:38:27.875 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.Server
+2025-04-29 18:38:27.875 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API
 2025-04-29 18:38:31.825 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
 2025-04-29 18:38:37.502 +08:00 [INF] SPA development server running at 'https://localhost:51204'
 2025-04-29 18:38:47.198 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.html - null null
@@ -56,7 +56,7 @@
 2025-04-29 18:40:59.614 +08:00 [INF] Now listening on: http://localhost:5039
 2025-04-29 18:40:59.618 +08:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-04-29 18:40:59.618 +08:00 [INF] Hosting environment: Development
-2025-04-29 18:40:59.619 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.Server
+2025-04-29 18:40:59.619 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API
 2025-04-29 18:41:03.591 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
 2025-04-29 18:41:05.909 +08:00 [INF] SPA development server running at 'https://localhost:51204'
 2025-04-29 18:41:28.086 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.html - null null
@@ -91,16 +91,16 @@
 2025-04-29 18:42:48.024 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/getjobtitles - 307 0 null 13.7228ms
 2025-04-29 18:42:48.026 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/getjobtitles - null null
 2025-04-29 18:42:48.037 +08:00 [INF] No CORS policy found for the specified request.
-2025-04-29 18:42:48.039 +08:00 [INF] Executing endpoint 'application.Server.Controllers.JobTitleController.GetJobTitles (application.Server)'
-2025-04-29 18:42:48.055 +08:00 [INF] Route matched with {action = "GetJobTitles", controller = "JobTitle"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[application.Server.Entities.JobTitle]] GetJobTitles() on controller application.Server.Controllers.JobTitleController (application.Server).
-2025-04-29 18:42:48.240 +08:00 [INF] Executed action application.Server.Controllers.JobTitleController.GetJobTitles (application.Server) in 169.9935ms
-2025-04-29 18:42:48.242 +08:00 [INF] Executed endpoint 'application.Server.Controllers.JobTitleController.GetJobTitles (application.Server)'
+2025-04-29 18:42:48.039 +08:00 [INF] Executing endpoint 'application.API.Controllers.JobTitleController.GetJobTitles (application.API)'
+2025-04-29 18:42:48.055 +08:00 [INF] Route matched with {action = "GetJobTitles", controller = "JobTitle"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[application.API.Entities.JobTitle]] GetJobTitles() on controller application.API.Controllers.JobTitleController (application.API).
+2025-04-29 18:42:48.240 +08:00 [INF] Executed action application.API.Controllers.JobTitleController.GetJobTitles (application.API) in 169.9935ms
+2025-04-29 18:42:48.242 +08:00 [INF] Executed endpoint 'application.API.Controllers.JobTitleController.GetJobTitles (application.API)'
 2025-04-29 18:42:48.297 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/getjobtitles - 500 null null 271.0835ms
 --2025-04-29 18:54:53.066 +08:00 [INF] Now listening on: https://localhost:7258
 2025-04-29 18:54:53.084 +08:00 [INF] Now listening on: http://localhost:5039
 2025-04-29 18:54:53.088 +08:00 [INF] Application started. Press Ctrl+C to shut down.
 2025-04-29 18:54:53.089 +08:00 [INF] Hosting environment: Development
-2025-04-29 18:54:53.089 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.Server
+2025-04-29 18:54:53.089 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API
 2025-04-29 18:54:56.998 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
 2025-04-29 18:54:59.388 +08:00 [INF] SPA development server running at 'https://localhost:51204'
 2025-04-29 18:55:32.939 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.html - null null

@@ -1,12 +1,12 @@
-﻿using application.Server.Contexts;
-using application.Server.Services.Models;
+﻿using application.API.Contexts;
+using application.API.Services.Models;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace application.Server.Services.Implementations.ApplicationLogs
+namespace application.API.Services.Implementations.ApplicationLogs
 {
     public class LogProcessingService : BackgroundService
     {
