@@ -15,15 +15,9 @@ namespace application.Server.Repositories.Implementations
             _context = context;
         }
 
-        public async Task<List<JobTitle>> GetJobTitlesAsync()
-        {
-            return await _context.JobTitles.ToListAsync();
-        }
+        public async Task<List<JobTitle>> GetJobTitlesAsync() => await _context.JobTitles.ToListAsync();
 
-        public Task<JobTitle> GetJobTitleAsync(JobTitle jobTitle)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<JobTitle> GetJobTitleByIdAsync(int id) => await _context.JobTitles.Include(j => j.Employees).FirstOrDefaultAsync(j => j.Id == id);
 
         public async Task InsertJobTitleAsync(JobTitle jobTitle)
         {

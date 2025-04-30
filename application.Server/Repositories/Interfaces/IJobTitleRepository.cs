@@ -5,7 +5,7 @@ namespace application.Server.Repositories.Interfaces
     public interface IJobTitleRepository
     {
         public Task<List<JobTitle>> GetJobTitlesAsync();
-        public Task<JobTitle> GetJobTitleAsync(JobTitle jobTitle);
+        public Task<JobTitle> GetJobTitleByIdAsync(int id);
 
         public Task InsertJobTitleAsync(JobTitle jobTitle);
     }

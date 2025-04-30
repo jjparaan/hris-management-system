@@ -61,6 +61,21 @@ namespace application.Server.Contexts
                     .OnDelete(DeleteBehavior.Restrict);
 
                 entity.HasIndex(e => e.Email).IsUnique();
+
+                entity.HasMany(e => e.LeaveRequests)
+                    .WithOne(l => l.Employee)
+                    .HasForeignKey(l => l.EmployeeId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasMany(e => e.AttendanceRecords)
+                    .WithOne(a => a.Employee)
+                    .HasForeignKey(a => a.EmployeeId)
+                    .OnDelete(DeleteBehavior.Restrict);
+
+                entity.HasMany(entity => entity.Payrolls)
+                    .WithOne(entity => entity.Employee)
+                    .HasForeignKey(entity => entity.EmployeeId)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
         }
 
@@ -78,6 +93,11 @@ namespace application.Server.Contexts
 
                 entity.Property(d => d.Description)
                     .HasMaxLength(500);
+
+                entity.HasMany(j => j.Employees)
+                    .WithOne(e => e.Department)
+                    .HasForeignKey(e => e.DepartmentId)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
         }
 
@@ -174,6 +194,11 @@ namespace application.Server.Contexts
 
                 entity.Property(u => u.Role)
                     .IsRequired();
+
+                entity.HasMany(u => u.ApplicationLogs)
+                    .WithOne(l => l.UserAccount)
+                    .HasForeignKey(l => l.UserAccountId)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
         }
 
@@ -191,6 +216,11 @@ namespace application.Server.Contexts
 
                 entity.Property(j => j.Description)
                     .HasMaxLength(500);
+
+                entity.HasMany(j => j.Employees)
+                    .WithOne(e => e.JobTitle)
+                    .HasForeignKey(e => e.JobTitleId)
+                    .OnDelete(DeleteBehavior.Restrict);
             });
         }
 
@@ -199,11 +229,17 @@ namespace application.Server.Contexts
             _modelBuilder.Entity<ApplicationLog>(entity =>
             {
                 entity.HasKey(l => l.Id);
+
                 entity.Property(l => l.CreatedOn).IsRequired();
+
                 entity.Property(l => l.Level).HasMaxLength(50).IsRequired();
+
                 entity.Property(l => l.Message).IsRequired();
+
                 entity.Property(l => l.Exception).HasMaxLength(2000);
+
                 entity.Property(l => l.Logger).HasMaxLength(255);
+
                 entity.HasOne(p => p.UserAccount)
                     .WithMany(e => e.ApplicationLogs)
                     .HasForeignKey(p => p.UserAccountId)

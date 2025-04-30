@@ -25,3 +25,109 @@
 2025-04-29 16:21:11.044 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
 2025-04-29 16:21:11.047 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/favicon-32x32.png - 200 628 image/png 27.0925ms
 2025-04-29 16:21:11.154 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.4689ms
+2025-04-29 18:38:27.862 +08:00 [INF] Now listening on: https://localhost:7258
+2025-04-29 18:38:27.869 +08:00 [INF] Now listening on: http://localhost:5039
+2025-04-29 18:38:27.874 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 18:38:27.874 +08:00 [INF] Hosting environment: Development
+2025-04-29 18:38:27.875 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.Server
+2025-04-29 18:38:31.825 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
+2025-04-29 18:38:37.502 +08:00 [INF] SPA development server running at 'https://localhost:51204'
+2025-04-29 18:38:47.198 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.html - null null
+2025-04-29 18:38:47.379 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/index.html - 200 null text/html;charset=utf-8 180.9739ms
+2025-04-29 18:38:47.386 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui.css - null null
+2025-04-29 18:38:47.388 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-bundle.js - null null
+2025-04-29 18:38:47.404 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-29 18:38:47.426 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 18:38:47.442 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/_vs/browserLink - null null
+2025-04-29 18:38:47.457 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 30.5772ms
+2025-04-29 18:38:47.527 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-29 18:38:47.527 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-29 18:38:47.540 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 135.9807ms
+2025-04-29 18:38:47.541 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-29 18:38:47.542 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui.css - 200 152034 text/css 155.8909ms
+2025-04-29 18:38:47.560 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/_vs/browserLink - 200 null text/javascript; charset=UTF-8 117.6329ms
+2025-04-29 18:38:47.561 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 173.3805ms
+2025-04-29 18:38:47.679 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - null null
+2025-04-29 18:38:47.680 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/favicon-32x32.png - null null
+2025-04-29 18:38:47.714 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-29 18:38:47.724 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/favicon-32x32.png - 200 628 image/png 43.4626ms
+2025-04-29 18:38:47.891 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 211.9982ms
+2025-04-29 18:40:59.608 +08:00 [INF] Now listening on: https://localhost:7258
+2025-04-29 18:40:59.614 +08:00 [INF] Now listening on: http://localhost:5039
+2025-04-29 18:40:59.618 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 18:40:59.618 +08:00 [INF] Hosting environment: Development
+2025-04-29 18:40:59.619 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.Server
+2025-04-29 18:41:03.591 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
+2025-04-29 18:41:05.909 +08:00 [INF] SPA development server running at 'https://localhost:51204'
+2025-04-29 18:41:28.086 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.html - null null
+2025-04-29 18:41:28.267 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/index.html - 200 null text/html;charset=utf-8 183.0019ms
+2025-04-29 18:41:28.289 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui.css - null null
+2025-04-29 18:41:28.294 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-bundle.js - null null
+2025-04-29 18:41:28.312 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-29 18:41:28.324 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 18:41:28.325 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/_vs/browserLink - null null
+2025-04-29 18:41:28.352 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 27.8138ms
+2025-04-29 18:41:28.367 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-29 18:41:28.370 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-29 18:41:28.382 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui.css - 200 152034 text/css 93.4314ms
+2025-04-29 18:41:28.389 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-29 18:41:28.390 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 79.4849ms
+2025-04-29 18:41:28.401 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/_vs/browserLink - 200 null text/javascript; charset=UTF-8 76.3435ms
+2025-04-29 18:41:28.403 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 108.3835ms
+2025-04-29 18:41:28.480 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/favicon-32x32.png - null null
+2025-04-29 18:41:28.480 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - null null
+2025-04-29 18:41:28.500 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-29 18:41:28.507 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/favicon-32x32.png - 200 628 image/png 26.2381ms
+2025-04-29 18:41:28.626 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 146.0519ms
+2025-04-29 18:42:31.359 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5039/insertjobtitle - application/json 191
+2025-04-29 18:42:31.371 +08:00 [INF] No CORS policy found for the specified request.
+2025-04-29 18:42:31.380 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5039/insertjobtitle - 307 0 null 20.6779ms
+2025-04-29 18:42:31.445 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7258/insertjobtitle - null null
+2025-04-29 18:42:31.450 +08:00 [INF] No CORS policy found for the specified request.
+2025-04-29 18:42:31.453 +08:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-04-29 18:42:31.454 +08:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-04-29 18:42:31.455 +08:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7258/insertjobtitle - 405 0 null 10.7493ms
+2025-04-29 18:42:48.011 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/getjobtitles - null null
+2025-04-29 18:42:48.024 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/getjobtitles - 307 0 null 13.7228ms
+2025-04-29 18:42:48.026 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/getjobtitles - null null
+2025-04-29 18:42:48.037 +08:00 [INF] No CORS policy found for the specified request.
+2025-04-29 18:42:48.039 +08:00 [INF] Executing endpoint 'application.Server.Controllers.JobTitleController.GetJobTitles (application.Server)'
+2025-04-29 18:42:48.055 +08:00 [INF] Route matched with {action = "GetJobTitles", controller = "JobTitle"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[application.Server.Entities.JobTitle]] GetJobTitles() on controller application.Server.Controllers.JobTitleController (application.Server).
+2025-04-29 18:42:48.240 +08:00 [INF] Executed action application.Server.Controllers.JobTitleController.GetJobTitles (application.Server) in 169.9935ms
+2025-04-29 18:42:48.242 +08:00 [INF] Executed endpoint 'application.Server.Controllers.JobTitleController.GetJobTitles (application.Server)'
+2025-04-29 18:42:48.297 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/getjobtitles - 500 null null 271.0835ms
+--2025-04-29 18:54:53.066 +08:00 [INF] Now listening on: https://localhost:7258
+2025-04-29 18:54:53.084 +08:00 [INF] Now listening on: http://localhost:5039
+2025-04-29 18:54:53.088 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-29 18:54:53.089 +08:00 [INF] Hosting environment: Development
+2025-04-29 18:54:53.089 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.Server
+2025-04-29 18:54:56.998 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
+2025-04-29 18:54:59.388 +08:00 [INF] SPA development server running at 'https://localhost:51204'
+2025-04-29 18:55:32.939 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.html - null null
+2025-04-29 18:55:33.142 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/index.html - 200 null text/html;charset=utf-8 201.4331ms
+2025-04-29 18:55:33.144 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui.css - null null
+2025-04-29 18:55:33.157 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/_vs/browserLink - null null
+2025-04-29 18:55:33.170 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-bundle.js - null null
+2025-04-29 18:55:33.186 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-29 18:55:33.206 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-29 18:55:33.244 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-29 18:55:33.269 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-29 18:55:33.274 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui.css - 200 152034 text/css 130.1344ms
+2025-04-29 18:55:33.253 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 46.4229ms
+2025-04-29 18:55:33.254 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.4519ms
+2025-04-29 18:55:33.282 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-29 18:55:33.284 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 98.6356ms
+2025-04-29 18:55:33.305 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 134.7431ms
+2025-04-29 18:55:33.492 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/favicon-32x32.png - null null
+2025-04-29 18:55:33.492 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - null null
+2025-04-29 18:55:33.527 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-29 18:55:33.541 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/favicon-32x32.png - 200 628 image/png 47.6149ms
+2025-04-29 18:55:33.689 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 197.0207ms
+2025-04-29 18:57:12.085 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5039/insertjobtitle - application/json 191
+2025-04-29 18:57:12.098 +08:00 [INF] No CORS policy found for the specified request.
+2025-04-29 18:57:12.107 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5039/insertjobtitle - 307 0 null 22.2917ms
+2025-04-29 18:57:12.160 +08:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7258/insertjobtitle - null null
+2025-04-29 18:57:12.169 +08:00 [INF] No CORS policy found for the specified request.
+2025-04-29 18:57:12.174 +08:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-04-29 18:57:12.175 +08:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-04-29 18:57:12.177 +08:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7258/insertjobtitle - 405 0 null 17.0315ms

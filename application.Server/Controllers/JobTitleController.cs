@@ -1,13 +1,11 @@
 ﻿using application.Server.Entities;
 using application.Server.Entities.DTOs;
-using application.Server.Repositories.Implementations;
+using application.Server.Repositories.Interfaces;
 using application.Server.Services.Interfaces.ApplicationLogs;
 using application.Server.Services.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
 using System.Net;
-using System.Text;
 
 namespace application.Server.Controllers
 {
@@ -16,10 +14,10 @@ namespace application.Server.Controllers
     public class JobTitleController : ControllerBase
     {
         private readonly ILogService _logger;
-        private readonly JobTitleRepository _jobTitleRepository;
+        private readonly IJobTitleRepository _jobTitleRepository;
         private readonly IMapper _mapper;
 
-        public JobTitleController(ILogService logger, JobTitleRepository jobTitleRepository, IMapper mapper)
+        public JobTitleController(ILogService logger, IJobTitleRepository jobTitleRepository, IMapper mapper)
         {
             _logger = logger;
             _jobTitleRepository = jobTitleRepository;
@@ -28,14 +26,47 @@ namespace application.Server.Controllers
 
         [HttpGet]
         [Route("/getjobtitles")]
-        public async Task<List<JobTitle>> GetJobTitles()
+        public async Task<ApplicationHttpResponse<List<JobTitle>>> GetJobTitles()
         {
             await _logger.LogInformationAsync("Fetching all Job titles", "GetJobTitles");
-            return await _jobTitleRepository.GetJobTitlesAsync();
+            List<JobTitle> jobTitles = await _jobTitleRepository.GetJobTitlesAsync();
+
+            return new ApplicationHttpResponse<List<JobTitle>>
+            {
+                Message = $"Job titles successfully fetched",
+                Data = jobTitles
+            };
+        }
+
+        [HttpGet]
+        [Route("/getjobtitle/{id}")]
+        public async Task<ApplicationHttpResponse<JobTitle>> GetJobTitle([FromRoute] int id)
+        {
+            JobTitle jobTitle = await _jobTitleRepository.GetJobTitleByIdAsync(id);
+
+            #region Validations
+            if (jobTitle == null)
+            {
+                await _logger.LogInformationAsync($"Job title with id {id} does not exist", "GetJobTitle");
+                return new ApplicationHttpResponse<JobTitle>
+                {
+                    Status = HttpStatusCode.NotFound,
+                    Message = $"Job title with id {id} does not exist",
+                    Data = null
+                };
+            }
+            #endregion
+
+            return new ApplicationHttpResponse<JobTitle>
+            {
+                Message = $"Job title successfully fetched",
+                Data = jobTitle
+            };
         }
 
         [HttpPost]
         [Route("/insertjobtitle")]
+        [Consumes("application/json")]
         public async Task<ApplicationHttpResponse<JobTitle>> InsertJobTitle([FromBody] JobTitleDTO jobTitleDTO)
         {
             // TODO: Create a reusable validation handler for request body

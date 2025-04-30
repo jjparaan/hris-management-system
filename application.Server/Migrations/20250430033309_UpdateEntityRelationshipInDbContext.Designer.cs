@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using application.Server.Contexts;
 
@@ -11,9 +12,11 @@ using application.Server.Contexts;
 namespace application.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250430033309_UpdateEntityRelationshipInDbContext")]
+    partial class UpdateEntityRelationshipInDbContext
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -56,7 +59,7 @@ namespace application.Server.Migrations
 
                     b.HasIndex("UserAccountId");
 
-                    b.ToTable("ApplicationLogs", (string)null);
+                    b.ToTable("ApplicationLogs");
                 });
 
             modelBuilder.Entity("application.Server.Entities.AttendanceRecord", b =>
@@ -98,7 +101,7 @@ namespace application.Server.Migrations
 
                     b.HasIndex("EmployeeId");
 
-                    b.ToTable("AttendanceRecords", (string)null);
+                    b.ToTable("AttendanceRecords");
                 });
 
             modelBuilder.Entity("application.Server.Entities.Department", b =>
@@ -136,7 +139,7 @@ namespace application.Server.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Departments", (string)null);
+                    b.ToTable("Departments");
                 });
 
             modelBuilder.Entity("application.Server.Entities.Employee", b =>
@@ -229,7 +232,7 @@ namespace application.Server.Migrations
 
                     b.HasIndex("JobTitleId");
 
-                    b.ToTable("Employees", (string)null);
+                    b.ToTable("Employees");
                 });
 
             modelBuilder.Entity("application.Server.Entities.JobTitle", b =>
@@ -267,7 +270,7 @@ namespace application.Server.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("JobTitles", (string)null);
+                    b.ToTable("JobTitles");
                 });
 
             modelBuilder.Entity("application.Server.Entities.LeaveRequest", b =>
@@ -320,7 +323,7 @@ namespace application.Server.Migrations
 
                     b.HasIndex("EmployeeId");
 
-                    b.ToTable("LeaveRequests", (string)null);
+                    b.ToTable("LeaveRequests");
                 });
 
             modelBuilder.Entity("application.Server.Entities.Payroll", b =>
@@ -365,7 +368,7 @@ namespace application.Server.Migrations
 
                     b.HasIndex("EmployeeId");
 
-                    b.ToTable("Payrolls", (string)null);
+                    b.ToTable("Payrolls");
                 });
 
             modelBuilder.Entity("application.Server.Entities.UserAccount", b =>
@@ -410,7 +413,7 @@ namespace application.Server.Migrations
                     b.HasIndex("Username")
                         .IsUnique();
 
-                    b.ToTable("UserAccounts", (string)null);
+                    b.ToTable("UserAccounts");
                 });
 
             modelBuilder.Entity("application.Server.Entities.ApplicationLog", b =>
