@@ -33,9 +33,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\application.ApplicationLayer\application.ApplicationLayer.csproj" />
     <ProjectReference Include="..\application.client\application.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+    <ProjectReference Include="..\application.Domain\application.Domain.csproj" />
+    <ProjectReference Include="..\application.Infrastructure\application.Infrastructure.csproj" />
+    <ProjectReference Include="..\application.Persistence\application.Persistence.csproj" />
   </ItemGroup>
 
 </Project>
