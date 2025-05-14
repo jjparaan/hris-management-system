@@ -1,5 +1,5 @@
 ﻿using System.Reflection.Emit;
-using application.API.Entities;
+using application.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace application.API.Contexts

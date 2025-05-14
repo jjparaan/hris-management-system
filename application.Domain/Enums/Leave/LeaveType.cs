@@ -1,4 +1,4 @@
-﻿namespace application.API.Entities.Enums.Leave
+﻿namespace application.Domain.Enums.Leave
 {
     public enum LeaveType
     {

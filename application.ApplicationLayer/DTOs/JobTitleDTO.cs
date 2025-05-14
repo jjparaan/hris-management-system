@@ -1,6 +1,8 @@
-﻿using application.API.Entities.Common;
+﻿
+using application.Domain.Entities;
+using application.Domain.Common;
 
-namespace application.API.Entities.DTOs
+namespace application.ApplicationLayer.DTOs
 {
     public class JobTitleDTO : AuditableBaseEntity
     {

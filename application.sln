@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "application.ApplicationLayer", "application.ApplicationLayer\application.ApplicationLayer.csproj", "{47558D7B-FD06-4825-996D-58E2CCDB56C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "application.Infrastructure", "application.Infrastructure\application.Infrastructure.csproj", "{28185F89-AEA0-492B-9BE3-912BA1202A26}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6C03646C-E277-41F5-B82B-98C0342626E2} = {6C03646C-E277-41F5-B82B-98C0342626E2}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "application.Persistence", "application.Persistence\application.Persistence.csproj", "{6C03646C-E277-41F5-B82B-98C0342626E2}"
 EndProject
@@ -23,7 +26,6 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9BA13027-EBB5-554F-8AB7-52D741F46F4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9BA13027-EBB5-554F-8AB7-52D741F46F4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9BA13027-EBB5-554F-8AB7-52D741F46F4B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{9BA13027-EBB5-554F-8AB7-52D741F46F4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BA13027-EBB5-554F-8AB7-52D741F46F4B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9BA13027-EBB5-554F-8AB7-52D741F46F4B}.Release|Any CPU.Deploy.0 = Release|Any CPU

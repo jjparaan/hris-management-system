@@ -1,4 +1,4 @@
-﻿namespace application.API.Entities.Enums.UserAccount
+﻿namespace application.Domain.Enums.UserAccount
 {
     public enum UserRole
     {

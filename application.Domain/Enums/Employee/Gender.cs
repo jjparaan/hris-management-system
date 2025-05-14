@@ -1,4 +1,4 @@
-﻿namespace application.API.Entities.Enums.Employee
+﻿namespace application.Domain.Enums.Employee
 {
     public enum Gender
     {

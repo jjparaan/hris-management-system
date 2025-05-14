@@ -1,6 +1,6 @@
-﻿using application.API.Entities.Common;
+﻿using application.Domain.Common;
 
-namespace application.API.Entities
+namespace application.Domain.Entities
 {
     public class Department : AuditableBaseEntity
     {

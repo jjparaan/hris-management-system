@@ -1,7 +1,7 @@
 ﻿using application.API.Contexts;
-using application.API.Entities;
 using application.API.Repositories.Interfaces;
 using application.API.Services.Interfaces.ApplicationLogs;
+using application.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace application.API.Repositories.Implementations

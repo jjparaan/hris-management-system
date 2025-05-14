@@ -1,8 +1,8 @@
-﻿using application.API.Entities;
-using application.API.Entities.DTOs;
-using application.API.Repositories.Interfaces;
+﻿using application.API.Repositories.Interfaces;
 using application.API.Services.Interfaces.ApplicationLogs;
 using application.API.Services.Models;
+using application.ApplicationLayer.DTOs;
+using application.Domain.Entities;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;

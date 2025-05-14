@@ -1,0 +1,61 @@
+2025-05-14 15:04:32.897 +08:00 [ERR] There was an error trying to launch the SPA proxy.
+System.InvalidOperationException: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.IsSpaProxyRunning(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyStartupFilter.<>c__DisplayClass4_0.<<Configure>g__StartIfNotRunning|1>d.MoveNext()
+2025-05-14 15:05:32.912 +08:00 [ERR] Connection id "0HNCIMMRSV2CL", Request id "0HNCIMMRSV2CL:00000001": An unhandled exception was thrown by the application.
+System.UriFormatException: Invalid URI: The URI is empty.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-05-14 15:05:35.218 +08:00 [ERR] Connection id "0HNCIMMRSV2CL", Request id "0HNCIMMRSV2CL:00000003": An unhandled exception was thrown by the application.
+System.UriFormatException: Invalid URI: The URI is empty.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-05-14 15:05:46.926 +08:00 [ERR] Connection id "0HNCIMMRSV2CM", Request id "0HNCIMMRSV2CM:00000001": An unhandled exception was thrown by the application.
+System.UriFormatException: Invalid URI: The URI is empty.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-05-14 15:05:48.462 +08:00 [ERR] Connection id "0HNCIMMRSV2CM", Request id "0HNCIMMRSV2CM:00000002": An unhandled exception was thrown by the application.
+System.UriFormatException: Invalid URI: The URI is empty.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-05-14 16:06:59.836 +08:00 [ERR] Unable to connect to the SPA development server at 'https://localhost:51204'.
+2025-05-14 16:08:46.917 +08:00 [ERR] There was an error trying to launch the SPA proxy.
+System.InvalidOperationException: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyLaunchManager.IsSpaProxyRunning(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyStartupFilter.<>c__DisplayClass4_0.<<Configure>g__StartIfNotRunning|1>d.MoveNext()
+2025-05-14 16:10:04.663 +08:00 [ERR] Connection id "0HNCINQTPNIDI", Request id "0HNCINQTPNIDI:00000001": An unhandled exception was thrown by the application.
+System.UriFormatException: Invalid URI: The URI is empty.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-05-14 16:10:05.580 +08:00 [ERR] Connection id "0HNCINQTPNIDI", Request id "0HNCINQTPNIDI:00000003": An unhandled exception was thrown by the application.
+System.UriFormatException: Invalid URI: The URI is empty.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-05-14 16:10:09.144 +08:00 [ERR] Connection id "0HNCINQTPNIDI", Request id "0HNCINQTPNIDI:00000005": An unhandled exception was thrown by the application.
+System.UriFormatException: Invalid URI: The URI is empty.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2025-05-14 16:10:28.168 +08:00 [ERR] Connection id "0HNCINQTPNIDJ", Request id "0HNCINQTPNIDJ:00000001": An unhandled exception was thrown by the application.
+System.UriFormatException: Invalid URI: The URI is empty.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at Microsoft.AspNetCore.SpaProxy.SpaProxyMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)

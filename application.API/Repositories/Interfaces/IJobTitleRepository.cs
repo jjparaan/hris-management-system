@@ -1,4 +1,4 @@
-﻿using application.API.Entities;
+﻿using application.Domain.Entities;
 
 namespace application.API.Repositories.Interfaces
 {

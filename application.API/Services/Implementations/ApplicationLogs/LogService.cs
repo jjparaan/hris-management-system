@@ -1,6 +1,5 @@
 ﻿using application.API.Contexts;
-using application.API.Entities.Enums.ApplicationLogs;
-using application.API.Entities;
+using application.Domain.Common;
 using Serilog;
 using System.Security.Claims;
 using application.API.Services.Interfaces.ApplicationLogs;
@@ -8,6 +7,8 @@ using application.API.Services.Models;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 using System;
+using application.Domain.Enums.ApplicationLogs;
+using application.Domain.Entities;
 
 namespace application.API.Services.Implementations.ApplicationLogs
 {

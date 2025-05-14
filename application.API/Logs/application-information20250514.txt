@@ -1,0 +1,99 @@
+2025-05-14 15:02:58.827 +08:00 [INF] Now listening on: https://localhost:7258
+2025-05-14 15:02:58.846 +08:00 [INF] Now listening on: http://localhost:5039
+2025-05-14 15:02:58.856 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-14 15:02:58.857 +08:00 [INF] Hosting environment: Development
+2025-05-14 15:02:58.858 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API
+2025-05-14 15:03:02.267 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
+2025-05-14 15:04:33.529 +08:00 [INF] Now listening on: https://localhost:7258
+2025-05-14 15:04:33.539 +08:00 [INF] Now listening on: http://localhost:5039
+2025-05-14 15:04:33.554 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-14 15:04:33.555 +08:00 [INF] Hosting environment: Development
+2025-05-14 15:04:33.557 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API
+2025-05-14 15:05:32.905 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-05-14 15:05:32.924 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 500 0 null 22.7965ms
+2025-05-14 15:05:35.214 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/ - null null
+2025-05-14 15:05:35.233 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/ - 500 0 null 18.264ms
+2025-05-14 15:05:46.924 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/ - null null
+2025-05-14 15:05:46.955 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/ - 500 0 null 31.5344ms
+2025-05-14 15:05:48.460 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/ - null null
+2025-05-14 15:05:48.470 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/ - 500 0 null 10.2791ms
+2025-05-14 16:04:53.284 +08:00 [INF] Now listening on: https://localhost:7258
+2025-05-14 16:04:53.292 +08:00 [INF] Now listening on: http://localhost:5039
+2025-05-14 16:04:53.298 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-14 16:04:53.299 +08:00 [INF] Hosting environment: Development
+2025-05-14 16:04:53.300 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API
+2025-05-14 16:04:57.241 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
+2025-05-14 16:07:56.846 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-05-14 16:07:57.175 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 200 null text/html;charset=utf-8 334.658ms
+2025-05-14 16:07:57.224 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-14 16:07:57.225 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_vs/browserLink - null null
+2025-05-14 16:07:57.279 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 54.9883ms
+2025-05-14 16:07:57.437 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 212.0813ms
+2025-05-14 16:07:57.623 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - null null
+2025-05-14 16:07:57.977 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 354.3217ms
+2025-05-14 16:08:03.806 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/getjobtitles - null null
+2025-05-14 16:08:03.848 +08:00 [INF] Executing endpoint 'application.API.Controllers.JobTitleController.GetJobTitles (application.API)'
+2025-05-14 16:08:03.878 +08:00 [INF] Route matched with {action = "GetJobTitles", controller = "JobTitle"}. Executing controller action with signature System.Threading.Tasks.Task`1[application.API.Services.Models.ApplicationHttpResponse`1[System.Collections.Generic.List`1[application.Domain.Entities.JobTitle]]] GetJobTitles() on controller application.API.Controllers.JobTitleController (application.API).
+2025-05-14 16:08:04.283 +08:00 [INF] Fetching all Job titles
+2025-05-14 16:08:06.365 +08:00 [INF] Executed DbCommand (61ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [j].[Id], [j].[CreatedBy], [j].[CreatedOn], [j].[Description], [j].[LastModifiedBy], [j].[LastModifiedOn], [j].[Name]
+FROM [JobTitles] AS [j]
+2025-05-14 16:08:06.528 +08:00 [INF] Executing ObjectResult, writing value of type 'application.API.Services.Models.ApplicationHttpResponse`1[[System.Collections.Generic.List`1[[application.Domain.Entities.JobTitle, application.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-05-14 16:08:06.592 +08:00 [INF] Executed action application.API.Controllers.JobTitleController.GetJobTitles (application.API) in 2693.056ms
+2025-05-14 16:08:06.595 +08:00 [INF] Executed endpoint 'application.API.Controllers.JobTitleController.GetJobTitles (application.API)'
+2025-05-14 16:08:06.610 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/getjobtitles - 200 null application/json; charset=utf-8 2804.7274ms
+2025-05-14 16:08:47.338 +08:00 [INF] Now listening on: https://localhost:7258
+2025-05-14 16:08:47.347 +08:00 [INF] Now listening on: http://localhost:5039
+2025-05-14 16:08:47.354 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-14 16:08:47.355 +08:00 [INF] Hosting environment: Development
+2025-05-14 16:08:47.356 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API
+2025-05-14 16:10:04.655 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-05-14 16:10:04.670 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 500 0 null 18.0215ms
+2025-05-14 16:10:05.573 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-05-14 16:10:05.588 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 500 0 null 14.2378ms
+2025-05-14 16:10:09.141 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-05-14 16:10:09.151 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 500 0 null 11.0275ms
+2025-05-14 16:10:28.166 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/ - null null
+2025-05-14 16:10:28.191 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/ - 500 0 null 25.6313ms
+2025-05-14 16:10:40.006 +08:00 [INF] Application is shutting down...
+2025-05-14 16:12:06.441 +08:00 [INF] Now listening on: https://localhost:7258
+2025-05-14 16:12:06.451 +08:00 [INF] Now listening on: http://localhost:5039
+2025-05-14 16:12:06.456 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-05-14 16:12:06.457 +08:00 [INF] Hosting environment: Development
+2025-05-14 16:12:06.458 +08:00 [INF] Content root path: C:\Users\01PH1714.Jhuan.P\Desktop\Dev\hris-management-system\application.API
+2025-05-14 16:12:10.516 +08:00 [INF] No SPA development server running at https://localhost:51204 found.
+2025-05-14 16:12:37.165 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/ - null null
+2025-05-14 16:12:39.323 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/index.html - null null
+2025-05-14 16:12:39.533 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - null null
+2025-05-14 16:12:39.535 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/index.html - 200 null text/html;charset=utf-8 211.2881ms
+2025-05-14 16:12:39.549 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 15.2433ms
+2025-05-14 16:12:39.553 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/_vs/browserLink - null null
+2025-05-14 16:12:39.601 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.623ms
+2025-05-14 16:12:39.654 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - null null
+2025-05-14 16:12:39.840 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 186.7535ms
+2025-05-14 16:12:41.240 +08:00 [INF] SPA proxy is not ready. Returning temporary landing page.
+2025-05-14 16:12:41.251 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/ - 200 null text/html 4094.7886ms
+2025-05-14 16:12:41.299 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/favicon.ico - null null
+2025-05-14 16:12:41.325 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/favicon.ico - 307 0 null 25.8148ms
+2025-05-14 16:12:41.341 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/favicon.ico - null null
+2025-05-14 16:12:41.352 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/favicon.ico - 404 0 null 10.9129ms
+2025-05-14 16:12:41.354 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7258/favicon.ico, Response status code: 404
+2025-05-14 16:12:44.285 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5039/ - null null
+2025-05-14 16:12:46.104 +08:00 [INF] SPA proxy is not ready. Returning temporary landing page.
+2025-05-14 16:12:46.105 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5039/ - 200 null text/html 1819.4085ms
+2025-05-14 16:12:52.070 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7258/getjobtitle/1 - null null
+2025-05-14 16:12:52.091 +08:00 [INF] Executing endpoint 'application.API.Controllers.JobTitleController.GetJobTitle (application.API)'
+2025-05-14 16:12:52.110 +08:00 [INF] Route matched with {action = "GetJobTitle", controller = "JobTitle"}. Executing controller action with signature System.Threading.Tasks.Task`1[application.API.Services.Models.ApplicationHttpResponse`1[application.Domain.Entities.JobTitle]] GetJobTitle(Int32) on controller application.API.Controllers.JobTitleController (application.API).
+2025-05-14 16:12:53.716 +08:00 [INF] Executed DbCommand (65ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedBy], [t].[CreatedOn], [t].[Description], [t].[LastModifiedBy], [t].[LastModifiedOn], [t].[Name], [e].[Id], [e].[Address], [e].[CreatedBy], [e].[CreatedOn], [e].[DateOfBirth], [e].[DepartmentId], [e].[Email], [e].[EmployeeCode], [e].[EmploymentStatus], [e].[FirstName], [e].[Gender], [e].[HireDate], [e].[JobTitleId], [e].[LastModifiedBy], [e].[LastModifiedOn], [e].[LastName], [e].[MiddleName], [e].[PhoneNumber], [e].[ProfilePictureUrl], [e].[Salary], [e].[ShortCode]
+FROM (
+    SELECT TOP(1) [j].[Id], [j].[CreatedBy], [j].[CreatedOn], [j].[Description], [j].[LastModifiedBy], [j].[LastModifiedOn], [j].[Name]
+    FROM [JobTitles] AS [j]
+    WHERE [j].[Id] = @__id_0
+) AS [t]
+LEFT JOIN [Employees] AS [e] ON [t].[Id] = [e].[JobTitleId]
+ORDER BY [t].[Id]
+2025-05-14 16:12:53.814 +08:00 [INF] Executing ObjectResult, writing value of type 'application.API.Services.Models.ApplicationHttpResponse`1[[application.Domain.Entities.JobTitle, application.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-05-14 16:12:53.856 +08:00 [INF] Executed action application.API.Controllers.JobTitleController.GetJobTitle (application.API) in 1722.2178ms
+2025-05-14 16:12:53.859 +08:00 [INF] Executed endpoint 'application.API.Controllers.JobTitleController.GetJobTitle (application.API)'
+2025-05-14 16:12:53.879 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7258/getjobtitle/1 - 200 null application/json; charset=utf-8 1808.943ms

@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <SpaRoot>..\application.client</SpaRoot>
+    <SpaProxyLaunchCommand>npm run dev</SpaProxyLaunchCommand>
+    <SpaProxyServerUrl>https://localhost:51204</SpaProxyServerUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
+      <Version>8.*-*</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog" Version="4.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\application.ApplicationLayer\application.ApplicationLayer.csproj" />
+    <ProjectReference Include="..\application.client\application.client.esproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\application.Domain\application.Domain.csproj" />
+    <ProjectReference Include="..\application.Infrastructure\application.Infrastructure.csproj" />
+    <ProjectReference Include="..\application.Persistence\application.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\..\..\..\.nuget\packages\automapper\14.0.0\lib\net8.0\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.AspNetCore">
+      <HintPath>..\..\..\..\.nuget\packages\serilog.aspnetcore\8.0.3\lib\net8.0\Serilog.AspNetCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Settings.Configuration">
+      <HintPath>..\..\..\..\.nuget\packages\serilog.settings.configuration\8.0.4\lib\net8.0\Serilog.Settings.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.Console">
+      <HintPath>..\..\..\..\.nuget\packages\serilog.sinks.console\6.0.0\lib\net8.0\Serilog.Sinks.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Serilog.Sinks.File">
+      <HintPath>..\..\..\..\.nuget\packages\serilog.sinks.file\7.0.0\lib\net8.0\Serilog.Sinks.File.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
